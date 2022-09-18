@@ -1,15 +1,22 @@
+import { fetchAdvice } from './fetchAdvice'
 import './style.css'
-import { setupCounter } from './counter.js'
 
-document.querySelector('#app').innerHTML = `
+const $ = selector => document.querySelector(selector)
+
+
+$('#app').innerHTML = `
     <div class="advice-content">
-      <h3>ADVICE #117</h3>
+    <h3>ADVICE #<span class="advice-id">117</span></h3>
       <p class="advice">
       "It is easy to sit up and take notice, what's difficult is getting up and take action."
       </p>
-      <hr class="separator"></hr>
-      <button class="quote-button"><span><iconify-icon icon="arcticons:quoteunquote" width="60" height="60"></iconify-icon></span></button>
+      <img src="separator.PNG"></img>
+      <button class="quote-button"><img class="image-button" src="button.PNG"></img></button>
     </div>
 `
 
-setupCounter(document.querySelector('#counter'))
+$('.quote-button').addEventListener('click', async () => {
+  const response = await fetchAdvice()
+  $('.advice-id').innerHTML = response.slip.id
+  $('.advice').innerHTML = `"${response.slip.advice}"`
+})

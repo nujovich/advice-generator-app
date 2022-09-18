@@ -1,14 +1,10 @@
-export function fetchAdvice () {
-    const options = {
-        method: 'GET',
-        headers: {
+const OPTIONS = {
+    method: 'GET'
+};
 
-        }
-    };
-    fetch('https://api.adviceslip.com/advice', options)
+export function fetchAdvice () {
+    
+    return fetch('https://api.adviceslip.com/advice', OPTIONS)
 	.then(response => response.json())
-	.then(response => {
-        return response;
-    })
 	.catch(err => console.error(err));
 }
