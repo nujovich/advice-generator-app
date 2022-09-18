@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/nujovich/advice-generator-app)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://advice-generator-app-ebon.vercel.app/)
 
 ## My process
 
@@ -47,6 +47,7 @@ I tried to make this simple as possible. I built the application using only Vani
 - Vanilla JS
 - Desktop-first workflow
 - [Vite](https://vitejs.dev/) - Frontend Tooling
+- [Vercel](https://vercel.com/) - Deployment
 
 ### What I learned
 
