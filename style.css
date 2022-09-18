@@ -37,7 +37,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  gap: 2em;
+  gap: 1em;
 }
 
 h3, .advice-id {
@@ -92,7 +92,7 @@ h3{
     padding: 0;
   }
   .advice-content{
-    gap: 1em;
+    gap: .5em;
     width: 350px;
     height: 320px;
     margin-bottom: 100px;
