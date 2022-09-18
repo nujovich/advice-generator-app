@@ -38,7 +38,7 @@ Users should be able to:
 
 ## My process
 
-I tried to make this simple as possible. I built the application using only Vanilla JS to re-enforce some knowlege, CSS3 and HTML5
+I tried to make this simple as possible. I built the application using only Vanilla JS to re-enforce some knowledge, CSS3 and HTML5
 
 ### Built with
 
