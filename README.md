@@ -61,7 +61,7 @@ Hover transitions over dice button
 
 ### Continued development
 
-I would like to make improvements on the CSS markup. If the advice is too long, it takes over th div content and it looks ugly.
+I would like to make improvements to the CSS markup. If the advice is too long, it takes over the div content and it looks ugly.
 
 ## Author
 
