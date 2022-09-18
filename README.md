@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/nujovich/advice-generator-app)
-- Live Site URL: [Add live site URL here](https://advice-generator-app-ebon.vercel.app/)
+- Solution URL: [FrontendMentor Link](https://www.frontendmentor.io/solutions/advice-generator-app-solution-hSTxbOwH66)
+- Live Site URL: [Vercel Link](https://advice-generator-app-ebon.vercel.app/)
 
 ## My process
 
