@@ -7,11 +7,13 @@ const response = async () => {
   return await fetchAdvice()
 }
 
+const slip = await response().then(response => response.slip)
+
 $('#app').innerHTML = `
     <div class="advice-content">
-    <h3>ADVICE #<span class="advice-id">${response.slip.id}</span></h3>
+    <h3>ADVICE #<span class="advice-id">${slip.id}</span></h3>
       <p class="advice">
-      "${response.slip.advice}"
+      "${slip.advice}"
       </p>
       <img class="pattern-divider-desktop" src="/pattern-divider-desktop.svg" alt="Divider"></img>
       <img class="pattern-divider-mobile" src="/pattern-divider-mobile.svg" alt="Divider"></img>
