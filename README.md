@@ -59,6 +59,16 @@ Hover transitions over dice button
 }
 ```
 
+Fetch information when DOM is loaded. I've originally put static data
+
+```html
+window.onload = async () => {
+  const response = await fetchAdvice()
+  $('.advice-id').innerHTML = response.slip.id
+  $('.advice').innerHTML = `"${response.slip.advice}"`
+}
+```
+
 ### Continued development
 
 I would like to make improvements to the CSS markup. If the advice is too long, it takes over the div content and it looks ugly.
