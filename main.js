@@ -12,9 +12,9 @@ $('#app').innerHTML = `
       <p class="advice">
       "${response.slip.advice}"
       </p>
-      <img class="pattern-divider-desktop" src="/pattern-divider-desktop.svg"></img>
-      <img class="pattern-divider-mobile" src="/pattern-divider-mobile.svg"></img>
-      <div class="dice-container"><img class="dice-button" src="/icon-dice.svg"></img></div>
+      <img class="pattern-divider-desktop" src="/pattern-divider-desktop.svg" alt="Divider"></img>
+      <img class="pattern-divider-mobile" src="/pattern-divider-mobile.svg" alt="Divider"></img>
+      <div class="dice-container"><img class="dice-button" src="/icon-dice.svg" alt="Icon Dice"></img></div>
     </div>
 `
 
