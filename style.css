@@ -99,8 +99,8 @@ h3{
   .advice-content{
     margin: 0 0.5em 4em 0.5em;
     gap: .5em;
-    min-width: 350px;
-    max-height: 320px;
+    max-width: 350px;
+    min-height: 320px;
   }
 
   .pattern-divider-desktop{
