@@ -61,7 +61,7 @@ Hover transitions over dice button
 
 Fetch information when DOM is loaded. I've originally put static data
 
-```html
+```js
 window.onload = async () => {
   const response = await fetchAdvice()
   $('.advice-id').innerHTML = response.slip.id
