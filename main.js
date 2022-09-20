@@ -3,14 +3,13 @@ import './style.css'
 
 const $ = selector => document.querySelector(selector)
 
-const response = await fetchAdvice()
-
+const response = await fetchAdvice().then(response => response.slip)
 
 $('#app').innerHTML = `
     <div class="advice-content">
-    <h3>ADVICE #<span class="advice-id">${response.slip.id}</span></h3>
+    <h3>ADVICE #<span class="advice-id">${response.id}</span></h3>
       <p class="advice">
-      "${response.slip.advice}"
+      "${response.advice}"
       </p>
       <img class="pattern-divider-desktop" src="/pattern-divider-desktop.svg" alt="Divider"></img>
       <img class="pattern-divider-mobile" src="/pattern-divider-mobile.svg" alt="Divider"></img>
