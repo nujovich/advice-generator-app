@@ -2,9 +2,12 @@ const OPTIONS = {
     method: 'GET'
 };
 
-export function fetchAdvice () {
+export async function fetchAdvice() {
     
-    return fetch('https://api.adviceslip.com/advice', OPTIONS)
-	.then(response => response.json())
-	.catch(err => console.error(err));
+    try {
+        const response = await fetch('https://api.adviceslip.com/advice', OPTIONS);
+        return await response.json();
+    } catch (err) {
+        return console.error(err);
+    }
 }
