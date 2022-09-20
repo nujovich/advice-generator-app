@@ -27,15 +27,14 @@ body {
 }
 
 .advice-content {
-  width: 538px;
-  height: 331px;
+  max-width: 538px;
+  min-height: 331px;
   padding: 1em;
   background-color: hsl(217, 19%, 24%);
   border-radius: 0.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   position: relative;
   gap: 1em;
 }
@@ -57,54 +56,59 @@ h3{
 .advice {
   color: hsl(193, 38%, 86%);
   background-color: inherit;
+  flex-wrap: wrap-reverse;
 }
 
-.quote-button{
-  width: fit-content;
-  background-color: hsl(150, 100%, 66%);
-  border: none;
-  display: flex;
-  place-content: center;
-  border-radius: 100%;
-  position: absolute;
-  bottom: -20px;
-  left: 242.5px;
-}
-
-.image-button{
+.dice-container{
   width: 50px;
   height: 50px;
-  padding: 0.5em;
+  background-color: hsl(150, 100%, 66%);
+  border: none;
   border-radius: 100%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.dice-button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: inherit;
+  border-style: initial
+}
+
+.pattern-divider-desktop{
   background-color: inherit;
 }
 
+.pattern-divider-mobile{
+  display: none;
+}
 
 
-.quote-button:hover{
+.dice-container:hover, .dice-button:hover{
   box-shadow: 0 0 20px hsl(150, 100%, 66%);
 }
 
 
 @media (max-width: 415px) {
 
-  #app {
-    padding: 0;
-  }
   .advice-content{
+    margin: 0 0.5em 4em 0.5em;
     gap: .5em;
-    width: 350px;
-    height: 320px;
-    margin-bottom: 100px;
+    min-width: 350px;
+    max-height: 320px;
   }
 
-  .quote-button{
-    left: 148px;
-    bottom: -25px;
+  .pattern-divider-desktop{
+    display: none;
   }
 
-  img{
-    width: 300px;
-    align-self: center;
+  .pattern-divider-mobile{
+    display: block;
+    background-color: inherit;
   }
 }

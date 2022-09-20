@@ -3,19 +3,22 @@ import './style.css'
 
 const $ = selector => document.querySelector(selector)
 
+const response = await fetchAdvice()
+
 
 $('#app').innerHTML = `
     <div class="advice-content">
-    <h3>ADVICE #<span class="advice-id">117</span></h3>
+    <h3>ADVICE #<span class="advice-id">${response.slip.id}</span></h3>
       <p class="advice">
-      "It is easy to sit up and take notice, what's difficult is getting up and take action."
+      "${response.slip.advice}"
       </p>
-      <img src="separator.PNG"></img>
-      <button class="quote-button"><img class="image-button" src="button.PNG"></img></button>
+      <img class="pattern-divider-desktop" src="/pattern-divider-desktop.svg"></img>
+      <img class="pattern-divider-mobile" src="/pattern-divider-mobile.svg"></img>
+      <div class="dice-container"><img class="dice-button" src="/icon-dice.svg"></img></div>
     </div>
 `
 
-$('.quote-button').addEventListener('click', async () => {
+$('.dice-button').addEventListener('click', async () => {
   const response = await fetchAdvice()
   $('.advice-id').innerHTML = response.slip.id
   $('.advice').innerHTML = `"${response.slip.advice}"`
