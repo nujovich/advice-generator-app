@@ -3,7 +3,7 @@ import './style.css'
 
 const $ = selector => document.querySelector(selector)
 
-const response = await fetchAdvice().then(response => response.slip)
+const response = fetchAdvice().then(response => response.slip)
 
 $('#app').innerHTML = `
     <div class="advice-content">
