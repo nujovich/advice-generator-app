@@ -54,7 +54,7 @@ I tried to make this simple as possible. I built the application using only Vani
 Hover transitions over dice button
 
 ```css
-.quote-button:hover{
+.dice-container:hover, .dice-button:hover{
   box-shadow: 0 0 20px hsl(150, 100%, 66%);
 }
 ```
